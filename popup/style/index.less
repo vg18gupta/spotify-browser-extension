@@ -1,0 +1,174 @@
+@import "components/MediaObject";
+@import "components/MenuBar";
+@import "components/MenuItem";
+@import "components/Player";
+@import "components/PlayerControl";
+@import "components/SpotifyLogo";
+@import "components/SearchField";
+@import "components/MediaListItem";
+@import "components/SearchMenuBar";
+@import "components/SearchResultViewer";
+@import "components/Login";
+@import "components/NoDevice";
+@import "components/Loading";
+
+@font-face {
+  font-family: Spotify Circular Light;
+  src: url('../public/fonts/CircularSpUIv3T-Light.woff2');
+}
+
+@font-face {
+  font-family: Spotify Circular Bold;
+  src: url('../public/fonts/CircularSpUIv3T-Bold.woff2');
+}
+
+@font-face {
+  font-family: Spotify Circular Book;
+  src: url('../public/fonts/CircularSpUIv3T-Book.woff2');
+}
+
+@font-face {
+  font-family: Spoticon;
+  src: url('../public/fonts/spoticon_regular_2.woff2');
+}
+
+.icon-player {
+  &:before {
+    content: "\F132";
+    font-family: Spoticon;
+  }
+}
+
+.icon-queue {
+  &:before {
+    content: "\F13A";
+    font-family: Spoticon;
+  }
+}
+
+.icon-search {
+  &:before {
+    content: "\F140";
+    font-family: Spoticon;
+  }
+}
+
+.icon-library {
+  &:before {
+    content: "\F116";
+    font-family: Spoticon;
+  }
+}
+
+.icon-shuffle {
+  &:before {
+    content: "\F144";
+    font-family: Spoticon;
+  }
+}
+
+.icon-skip-back {
+  &:before {
+    content: "\F146";
+    font-family: Spoticon;
+  }
+}
+
+.icon-play {
+  &:before {
+    content: "\F132";
+    font-family: Spoticon;
+  }
+}
+
+.icon-pause {
+  &:before {
+    content: "\F130";
+    font-family: Spoticon;
+  }
+}
+
+.icon-skip-forward {
+  &:before {
+    content: "\F148";
+    font-family: Spoticon;
+  }
+}
+
+.icon-repeat-off {
+  &:before {
+    content: "\F13E";
+    font-family: Spoticon;
+  }
+}
+
+.icon-repeat-context {
+  &:before {
+    content: "\F13E";
+    font-family: Spoticon;
+  }
+}
+
+.icon-repeat-track {
+  &:before {
+    content: "\F200";
+    font-family: Spoticon;
+  }
+}
+
+.icon-heart {
+  &:before {
+    content: "\F322";
+    font-family: Spoticon;
+  }
+}
+
+.icon-volume {
+  &:before {
+    content: "\F15E";
+    font-family: Spoticon;
+  }
+}
+
+.icon-volume-off {
+  &:before {
+    content: "\F1EF";
+    font-family: Spoticon;
+  }
+}
+
+body {
+  background-color: @page-background;
+  color: @default-text-color;
+  font-family: "Spotify Circular Light";
+  margin: 0;
+}
+
+.container {
+  width: 290px;
+  overflow: hidden;
+}
+
+.content {
+  margin-top: 15px;
+  height: 365px;
+  position: relative;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  width: 2px;
+  border-radius: 5px;
+  background: #888; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
