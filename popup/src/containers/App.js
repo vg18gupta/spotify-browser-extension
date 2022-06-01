@@ -11,7 +11,7 @@ class App extends Component {
   render() {
 
     return (
-      <div className="container">
+      <div className="container" style={{padding: "20px"}}>
         <SpotifyLogo />
         <Menubar />
         <ContentContainer />
